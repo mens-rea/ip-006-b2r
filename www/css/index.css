@@ -203,6 +203,9 @@ button.camera-control:hover {
   font-weight: 600;
   font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
 }
+.gb-menu-items:active, .gb-menu-items:hover, .gb-menu-items:focus{
+  background-color: black;
+}
 
 .gb-grocery-items-inner{
   border: 2px solid #b3e5fc;
@@ -345,8 +348,8 @@ body {
 .landing-brand{
   position: relative;
   margin: 5% auto;
-  height: 40%;
-  width: 40%;
+  height: 150px;
+  width: 150px;
 }
 
 .wrapper-list{
@@ -390,12 +393,94 @@ body {
   background-color: black;
 }
 
-.group-cont{
-  background-color: #f5f5f5;
+/* LOGIN PAGE */
+
+.slogan{
+  color: #0ad681;
+}
+
+.log-form-cont{
+  background-color: #f5f5f5; padding: 25px; width: 75%; margin: 0 auto;
+}
+.main-field-cont input{
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  background-color: #2e2e2e;
+  color: white;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.main-form-submit{
+  background-color: #0ad681;
+  border: none;
+  width: 100%;
   padding: 10px;
-  height: auto;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
   overflow: hidden;
 }
+.main-form-submit a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.field-remember,.field-forgot{
+  width: 50%;
+  padding: 15px -15px;
+  margin: 25px 0px;
+  float: left;
+}
+
+/* Destination Page */
+
+.station-cont{
+  background-color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 100px;
+  left: 10%;
+  width: 80%;
+}
+.station-cont div{
+  border-bottom: 1px solid #f5f5f5;
+  text-align: left;
+  padding: 5px;
+  color: #2e2e2e;
+  font-size: 18px;
+}
+.station-cont div a{
+  text-decoration: none;
+  color: #2e2e2e;
+  display: block;
+}
+.station-cont div:last-child{
+  border-bottom: 0px;
+}
+
+/* FORM GROUP PAGE */
+
+.group-cont{
+  background-color: white;
+  padding: 20px;
+  padding-bottom: 0px;
+  height: auto;
+  overflow: hidden;
+  position: fixed;
+  width: 80%;
+  top: 100px;
+  left: 10%;
+}
+
+.group-cont{ 
+  text-align: left;
+}
+
 .group-cont-finish{
   margin-top: 25%;
   padding-bottom: 50px;
@@ -406,11 +491,17 @@ body {
   font-size: 20px;
 }
 
+.riders-cont{
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
 .rider-frame{
   width: 30px;
   height: 30px;
   border-radius: 100%;
-  background-color: white;
+  background-color: #f5f5f5;
   float: left;
   margin-right: 5px;
 }
@@ -418,10 +509,66 @@ body {
   width: 100px;
   height: 100px;
 }
+.alpha-rider{
+  height: 40px;
+  width: 40px;
+}
+.omega-rider{
+  margin-top: 10px;
+}
+
+.group-options{
+  width: 50%;
+  padding-left: -15px;
+  padding-right: -15px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  float: left;
+  border-top: 1px solid #f5f5f5;
+  text-decoration: none;
+}
+
+#go-alone{
+  border-right: 1px solid #f5f5f5;
+}
 
 #join-button{
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+/* START RIDE FORM */
+.start-ride-cont{
+  padding-bottom: 20px;
+}
+
+/* WARNING MESSAGE */
+.message-overlay{
+  background-color: black;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.warning-cont{
+  font-size: 18px;
+  padding: 20px;
+  background-color: white;
+  width: 80%;
+  position: fixed;
+  z-index: 4;
+  top: 120px;
+  left: 10%;
+}
+
+.go-alone-insist{
+  margin-top: 20px;
 }

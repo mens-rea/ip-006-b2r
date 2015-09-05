@@ -35,7 +35,19 @@
     </head>
     <body>
         <img class="landing-brand" src="img/b2r_logo.png" />
-        <a id="join-button" class="gb-menu-items" href="destination.php"><i class="fa fa-plus"></i>RIDE</a>
+
+        <h3 class="slogan">MEET . SAVE . BIKE</h3>
+        <form class="log-form-cont">
+            <div class="main-field-cont"><input name="username" placeholder="Enter Email Address" type="text" /></div>
+            <div class="main-field-cont"><input name="password" placeholder="Password" type="text" /></div>
+            <div class="field-remember">Remember me</div>
+            <div class="field-forgot">Forgot your password</div>
+            <div class="main-form-submit"><a href="destination.php">LOG IN</a></div>
+            <!-- <input class="main-form-submit" type="submit" value="LOG IN"> -->
+        </form>
+
+        <h6>not yet registered? create an account</h6>
+         <a id="join-button" class="gb-menu-items" href="index.php"><i class="fa fa-plus"></i>RIDE</a> 
         
 
  <script type="text/javascript">

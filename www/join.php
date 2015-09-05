@@ -77,44 +77,7 @@
 
             window.localStorage.setArray("cachedPosts", gatheredPosts);
 
-          /*  for (var i = 0; i < gatheredPosts.length; i++) {
-                    var x = document.createElement("div");
-                    var t = document.createTextNode(gatheredPosts[i].title+": "+gatheredPosts[i].price);
-                    x.appendChild(t);
-                    document.body.appendChild(x);
-            }*/
-
-
             function whatClicked(evt) {
-                /*
-                alert("Submitted!");
-                alert(document.getElementById("name").value);
-                alert(document.getElementById("price").value);
-                */
-                /*
-                index = parseInt(localStorage["key"]);
-
-                names[index] = prompt("New member name?");
-                
-                index=index+1;
-                alert(index);
-                localStorage["key"] = index;
-                
-                localStorage["names"] = JSON.stringify(names);
-
-                alert(localStorage["key"]);
-
-                storedNames = JSON.parse(localStorage["names"]);
-                */
-                /*
-                var names = [];
-                names[2] = prompt("New member name?");
-                localStorage["names"] = JSON.stringify(names);
-
-
-                var storedNames = JSON.parse(localStorage["names"]);
-                alert(storedNames);
-                */
                 Storage.prototype.setArray = function(key, obj) {
                         return this.setItem(key, JSON.stringify(obj))
                 }

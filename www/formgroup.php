@@ -1,5 +1,22 @@
 <!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
 
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
 <html>
     <head>
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
@@ -69,12 +86,24 @@
     </head>
 
     <body>
-        <input id="pac-input" class="controls" type="text" placeholder="Your Destination">
         <div id="map"></div>
+
+         <div class="group-cont">
+          <h3><b>Group Id: 0945721</b></h3>
+          <h4>Bench Tower Rizal Drive, Taguig City</h4>
+          <h4>Estimated Time: 10 mins</h4>
+          <div class="riders-cont">
+            <div class="alpha-rider rider-frame"></div>
+            <div class="omega-rider rider-frame"></div>
+            <div class="omega-rider rider-frame"></div>
+            <div class="omega-rider rider-frame"></div>
+          </div>
+          <a id="go-alone" class="group-options" href="goalone.php">Go Alone</a><a class="group-options" href="start.php">Cancel</a>
+        </div>
 
         <div class="station-cont">
             <div>Found 3 Stations near you. Select One.</div>
-            <div><a href="formgroup.php">Ayala MRT (closest)</a></div>
+            <div><a href="startride.php">Ayala MRT (closest)</a></div>
             <div><a href="formgroup.php">Vito Cruz</a></div>
             <div><a href="formgroup.php">Ayala Triangle</a></div>
         </div>
