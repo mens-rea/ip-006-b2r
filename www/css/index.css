@@ -1,0 +1,381 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    /*background-color:#E4E4E4;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #A7A7A7),
+        color-stop(0.51, #E4E4E4)
+    );
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    width:100%;
+    text-align: center; */
+    background-color: white;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+
+.div-center{
+    margin: 0 auto;
+}
+.center-vertical{
+    position: relative;
+    margin-top: 5em;
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+.main-container{
+    text-align: center;
+}
+.main-container a{
+    text-decoration: none;
+    color: black;
+}
+
+.subpage-container{
+    text-align: left;
+}
+
+.buttons{
+    cursor:pointer;
+    font-size: 4.1em;
+    border: 1px solid gray;
+    background-color: white;
+    padding-left: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 16px;
+    min-width: 200px;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 20px;
+}
+.counter{
+    font-size: 52px;
+}
+
+.blocks-container{
+    overflow: hidden;
+    padding: 0 40em;
+}
+.blocks{
+    width: 30%;
+    min-height: 20em;
+}
+
+.pictures{
+    height: 25em;
+}
+
+.desc-holder{
+    font-size: 1.2em;
+    width: 175px;
+    float: left;
+}
+.main-holder{
+    overflow: hidden;
+    width:300px;
+    margin: 0 auto;
+    //border: 1px solid red;
+}
+
+button.camera-control {
+  background-color: #f3f3f3;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f3f3f3), color-stop(50%, #dddddd), color-stop(50%, #d2d2d2), color-stop(100%, #dfdfdf));
+  background-image: -webkit-linear-gradient(top, #f3f3f3 0%, #dddddd 50%, #d2d2d2 50%, #dfdfdf 100%);
+  background-image: linear-gradient(top, #f3f3f3 0%, #dddddd 50%, #d2d2d2 50%, #dfdfdf 100%);
+  border-right: 1px solid #dfdfdf;
+  border-bottom: 1px solid #b4b4b4;
+  border-right: 1px solid #dfdfdf;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 1px 0 0 white, 0 1px 0 0 #d5d5d5, 0 -1px 2px 1px #efefef;
+  box-shadow: inset 0 1px 0 0 white, 0 1px 0 0 #d5d5d5, 0 -1px 2px 1px #efefef;
+  color: #666;
+  display: block;
+  font: bold 16px "helvetica neue", helvetica, arial, sans-serif;
+  margin: 10px auto;
+  padding: 7px 0;
+  text-shadow: 0 1px 1px #fff;
+  width: 150px; 
+}
+button.camera-control:hover {
+    background-color: #e5e5e5;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e5e5e5), color-stop(50%, #d1d1d1), color-stop(50%, #c4c4c4), color-stop(100%, #b8b8b8));
+    background-image: -webkit-linear-gradient(top, #e5e5e5 0%, #d1d1d1 50%, #c4c4c4 50%, #b8b8b8 100%);
+    background-image: linear-gradient(top, #e5e5e5 0%, #d1d1d1 50%, #c4c4c4 50%, #b8b8b8 100%);
+    -webkit-box-shadow: inset 0 1px 0 0 #f2f2f2, 0 1px 0 0 #c9c9c9, 0 -1px 2px 1px #e3e3e3;
+    box-shadow: inset 0 1px 0 0 #f2f2f2, 0 1px 0 0 #c9c9c9, 0 -1px 2px 1px #e3e3e3; }
+  button.camera-control:active {
+    -webkit-box-shadow: inset 0 0 30px 0 #999999, 0 1px 0 0 white;
+    box-shadow: inset 0 0 30px 0 #999999, 0 1px 0 0 white; 
+}
+
+.half-wit{
+  width: 50%;
+  float: left;
+}
+
+.main-menu{
+  font-size: 1.2em;
+  text-decoration: none;
+  --color: white;
+  color: #b3e5fc;
+}
+
+.menu{
+  list-style: none;
+  width: 100%;
+  overflow: hidden;
+}
+.menu li{
+  float: left;
+  border-right: 1px solid white;
+}
+.menu li a{
+  padding: 10px 15px;
+}
+.menu li a:hover, .menu li a:active, .menu li a:focus{
+  --color: green;
+  color: #FFFFFF;
+}
+
+.gb-menu-items{
+  text-decoration: none;
+  color: #2e2e2e;
+}
+.gb-menu-items div{
+  border: 1px solid #607d8b; 
+  --border: 1px solid red; 
+  width: 100%; 
+  text-align: center;
+  font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+  height: 150px; 
+  font-size: 2em; 
+  padding-top: 15%;
+  padding-bottom: 15%; 
+  font-weight: 600;
+}
+
+.gb-grocery-items-inner{
+  border: 2px solid #b3e5fc;
+  height: 150px;
+  margin-top: 15px;
+  position: relative;
+}
+.gb-grocery-items-inner a{
+  padding: 10px 15px;
+  background-color: #b3e5fc;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  font-weight: 600;
+  text-decoration: none;
+}
+.gb-grocery-items-inner a:hover{
+  background-color: black;
+  color: white;
+}
+.element-container{
+  font-size: 2em;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.element-container2{
+  font-size: 1.2em;
+  position: relative;
+  width: 100%;
+  border: 1px solid #b3e5fc;;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  -ms-touch-action: none;
+}
+
+body,ul,li {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  font-size: 12px;
+  font-family: ubuntu, helvetica, arial;
+  overflow: hidden; /* this is important to prevent the whole page to bounce */
+}
+
+#header {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  line-height: 45px;
+  --background: #2e2e2e;
+  background-color: #0288d1;  
+  padding: 0;
+  color: #eee;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 15px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+#total-amount{
+  float: right;
+  margin-right: 15px;
+}
+
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 45px;
+  bottom: 48px;
+  left: 0;
+  width: 100%;
+  background: #ccc;
+  overflow: hidden;
+}
+
+#scroller {
+  position: absolute;
+  z-index: 1;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  width: 100%;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -o-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+#scroller ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: left;
+}
+
+#scroller li {
+  padding: 0 10px;
+  height: auto;
+  line-height: 40px;
+  border-top: 1px solid #fff;
+  background-color: #fafafa;
+  font-size: 14px;
+  float: left;
+  width: 50%;
+}
+
+.wrapper-list{
+  padding-top: 45px !important;
+}
+.wrapper-list #scroller #items-container li{
+  width: 100% !important;
+  font-size: 1.5em !important;
+  font-weight: 400;
+}
+
+#cleardata{
+  height: 47px;
+  float: right;
+  --background-color: red;
+  background-color: #f44336;  
+  color: #F5F5F5;
+  border: none;
+  cursor: pointer;
+}
+
+.table-properties{
+  border: 1px solid #2e2e2e;
+  float: left;
+  width: 33.33%;
+  background-color: white;
+  font-weight: 300;
+  font-size: 1em;
+  color: #2e2e2e;
+}
+
+.defaultMessage{
+  font-size: 2em;
+  font-weight: 800;
+  color: gray;
+  padding: 50% 0px;
+  text-align: center;
+}
