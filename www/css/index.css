@@ -55,6 +55,18 @@ body {
   background-color: #f5f5f5 !important;
 }
 
+.grey-button{
+  background-color: #e5e5e5 !important;
+}
+
+.fa-star{
+  color: #d8d8d8;
+  font-size: 28px;
+}
+.fa-star-highlight{
+  color: #e8e325;
+}
+
 @keyframes fade {
     from { opacity: 1.0; }
     50% { opacity: 0.4; }
@@ -586,6 +598,7 @@ nav .bars{
 .group-cont h3{
   font-family: 'ComfortaaBold';
   font-size: 18px;
+  margin-bottom: 5px;
 }
 .group-cont h4{
   font-family: 'ComfortaaThin';
@@ -724,4 +737,22 @@ nav .bars{
 .user-dets-cont .user-stat{
   float: left;
   margin-top: 10px;
+}
+
+/* USER FEEDBACK */
+
+.feedback-icon{
+  float: left;
+  margin-right: 0px;
+  margin-top: 5px;
+  margin-left: 25px;
+}
+.feedback-cont{
+  float: left;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.feedback-cont h3{
+  margin-top: 0px;
+  margin-bottom: 5px;
 }

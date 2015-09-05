@@ -39,12 +39,7 @@
           <a id="go-alone" class="group-options" href="loneride.php">Go Alone(1)</a><a id="cancel" class="group-options" href="start.php">Cancel</a>
         </div>
 
-        <div class="station-cont">
-            <div>Found 3 Stations near you. Select One.</div>
-            <div><a href="startride.php">Ayala MRT (closest)</a></div>
-            <div><a href="formgroup.php">Vito Cruz</a></div>
-            <div><a href="formgroup.php">Ayala Triangle</a></div>
-        </div>
+        <div class="main-form-submit start-button grey-button"><a href="groupstart.php"><i class="fa fa-home"></i>START RIDE!</a></div>
 
         <!-- <a id="join-button" class="gb-menu-items" href="destination.php" style="position: fixed; z-index: 2; bottom: 0; display: block;"><i class="fa fa-plus"></i>SELECT DESTINATION</a>  -->
     

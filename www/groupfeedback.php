@@ -7,6 +7,7 @@
         <meta charset="utf-8">
 
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
         <title>Select Destination</title>
 
@@ -24,20 +25,33 @@
 
         <div class="group-cont lone-cont grey-cont">
             <div class="user-dets-cont">
-                <div class="alpha-rider rider-frame">
-                    <img src="img/user1.png"/>
-                </div>
-                <h3 class="user-stat">ARRIVED</h3>
-                <h3 class="bike-no"><b>BIKE NO. 004</b></h3>
+                <i class="fa fa-star fa-star-highlight icons feedback-icon"></i>
+                <h3 class="user-stat">RATE THE PACK</h3>
             </div>
-        
-          <h3><img class="icons" src="img/group.png"/><b>ID: 0945721</b></h3>
-          <h4><img class="icons" src="img/station.png"/>Bench Tower Rizal Drive, Taguig City</h4>
-          <h4><img class="icons icons-small" src="img/time.png"/>Time: 20 mins</h4>
-          <h1>Php 22.50</h1>
+            <div class="riders-cont">
+                <div class="alpha-rider rider-frame rider-fram-big"><img src="img/user1.png"/></div>
+                <div class="feedback-cont">
+                    <h3>MARY ELIZABETH</h3>
+                    <i class="fa fa-star fa-star-highlight"></i><i class="fa fa-star fa-star-highlight"></i><i class="fa fa-star fa-star-highlight"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="riders-cont">
+                <div class="alpha-rider rider-frame rider-fram-big"><img src="img/user1.png"/></div>
+                <div class="feedback-cont">
+                    <h3>PRITONG MANOK</h3>
+                    <i class="fa fa-star fa-star-highlight"></i><i class="fa fa-star fa-star-highlight"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="riders-cont">
+                <div class="alpha-rider rider-frame rider-fram-big"><img src="img/user1.png"/></div>
+                <div class="feedback-cont">
+                    <h3>DONITA ROSE</h3>
+                    <i class="fa fa-star fa-star-highlight"></i><i class="fa fa-star fa-star-highlight"></i><i class="fa fa-star fa-star-highlight"></i><i class="fa fa-star fa-star-highlight"></i><i class="fa fa-star fa-star-highlight"></i>
+                </div>
+            </div>
         </div>     
 
-        <div class="main-form-submit start-button"><a href="destination.php"><i class="fa fa-home"></i>END TRANSACTION</a></div>
+        <div class="main-form-submit start-button"><a href="destination.php">SUBMIT</a></div>
      
         
 <script>
