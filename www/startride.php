@@ -87,7 +87,7 @@
 
     <body>
         <div id="map"></div>
-
+        <input id="pac-input" class="controls" type="text" placeholder="Your Destination">
          <div class="group-cont start-ride-cont">
           <h3><b>Group Id: 0945721</b></h3>
           <h4>Bench Tower Rizal Drive, Taguig City</h4>
