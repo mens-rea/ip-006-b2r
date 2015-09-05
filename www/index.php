@@ -34,6 +34,7 @@
         <title>KALESA</title>
     </head>
     <body>
+        
         <img class="landing-brand" src="img/b2r_logo.png" />
 
         <h3 class="slogan">MEET . SAVE . BIKE</h3>
