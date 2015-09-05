@@ -36,7 +36,7 @@
     <body class="start-ride-body">
 
         <div class="group-cont group-cont-finish">
-          <h1>YOUR GROUP IS NOW COMPLETE!</h1>
+          <h1>YOUR GROUP HAS ARRIVED!</h1>
           <h3>Group Id: 0945721</h3>
           <h4>Group Leader: Juaning</h4>
           <div class="riders-cont">
@@ -47,7 +47,7 @@
           </div>
         </div>
       
-        <a id="join-button" class="gb-menu-items" href="finish.php"><i class="fa fa-home"></i>START RIDE!</a>
+        <a id="join-button" class="gb-menu-items" href="end.php"><i class="fa fa-home"></i>FINISH RIDE!</a>
      
         </form>
         <script type="text/javascript" src="js/index.js"></script>
