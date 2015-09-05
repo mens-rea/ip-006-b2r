@@ -1,21 +1,30 @@
+/* Potatocodes B2R App */
+
+/* TABLE OF CONTENTS */
+
 /*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
+- FONTS
+- DEFAULTS
+- CUSTOM
+*/
+
+/* FONTS */
+@font-face {
+  font-family: "ComfortaaBold";
+  src: url("../fonts/COMFORTAA_BOLD.TTF");
+} 
+
+@font-face {
+  font-family: "ComfortaaRegular";
+  src: url("../fonts/COMFORTAA_REGULAR.TTF");
+} 
+
+@font-face {
+  font-family: "ComfortaaThin";
+  src: url("../fonts/COMFORTAA_THIN.TTF");
+} 
+
+/* DEFAULTS */
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
@@ -24,28 +33,22 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    /*background-color:#E4E4E4;
-    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #A7A7A7),
-        color-stop(0.51, #E4E4E4)
-    );
-    background-attachment:fixed;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:12px;
-    height:100%;
-    margin:0px;
-    padding:0px;
-    text-transform:uppercase;
-    width:100%;
-    text-align: center; */
     background-color: white;
     text-align: center;
+}
+
+/* CUSTOM */
+
+.icons{
+  margin-right: 10px;
+  width: 40px;
+  margin-top: 10px;
+  margin-bottom: -5px;
+}
+.icons-small{
+  width: 25px;
+  margin-right: 15px;
+  margin-left: 10px;
 }
 
 @keyframes fade {
@@ -422,6 +425,63 @@ nav .bars{
   background-color: black;
 }
 
+/* MAP AND OTHER ELEMENTS */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            height: 100%;
+        }
+        .controls {
+          margin-top: 10px;
+          border: 1px solid transparent;
+          border-radius: 2px 0 0 2px;
+          box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          height: 32px;
+          outline: none;
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        }
+
+
+        #pac-input {
+          background-color: #fff;
+          font-family: "ComfortaaBold";
+          font-size: 18px;
+          color: black;
+          font-weight: 300;
+          margin-left: 12px;
+          padding: 20px;
+          margin-top: 100px;
+          text-overflow: ellipsis;
+          width: 300px;
+        }
+
+        #pac-input:focus {
+          border-color: #4d90fe;
+        }
+
+        .pac-container {
+          font-family: Roboto;
+        }
+
+        #type-selector {
+          color: #fff;
+          background-color: #4d90fe;
+          padding: 5px 11px 0px 11px;
+        }
+
+        #type-selector label {
+          font-family: Roboto;
+          font-size: 13px;
+          font-weight: 300;
+        }
+        #target {
+            width: 345px;
+        }
+
 /* LOGIN PAGE */
 
 .slogan{
@@ -479,14 +539,16 @@ nav .bars{
 .station-cont div{
   border-bottom: 1px solid #f5f5f5;
   text-align: left;
-  padding: 5px;
+  padding: 10px;
   color: #2e2e2e;
   font-size: 18px;
+  font-family: "ComfortaaBold";
 }
 .station-cont div a{
   text-decoration: none;
   color: #2e2e2e;
   display: block;
+  font-family: "ComfortaaThin";
 }
 .station-cont div:last-child{
   border-bottom: 0px;
@@ -496,7 +558,8 @@ nav .bars{
 
 .group-cont{
   background-color: white;
-  padding: 20px;
+  padding: 25px;
+  padding-top: 0px;
   padding-bottom: 0px;
   height: auto;
   overflow: hidden;
@@ -504,6 +567,7 @@ nav .bars{
   width: 80%;
   top: 100px;
   left: 10%;
+  margin-top: 40px;
 }
 
 .group-cont{ 
@@ -516,8 +580,14 @@ nav .bars{
 }
 
 .group-cont h3{
-  font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-  font-size: 20px;
+  font-family: 'ComfortaaBold';
+  font-size: 18px;
+}
+.group-cont h4{
+  font-family: 'ComfortaaThin';
+  font-size: 14px;
+  margin: 0px;
+  font-weight: 300;
 }
 
 .riders-cont{
@@ -525,6 +595,8 @@ nav .bars{
   position: relative;
   overflow: hidden;
   margin-bottom: 10px;
+  margin-top: 20px;
+  padding-left: 32px;
 }
 .rider-frame{
   width: 30px;
@@ -532,7 +604,12 @@ nav .bars{
   border-radius: 100%;
   background-color: #f5f5f5;
   float: left;
+  padding: 0px;
   margin-right: 5px;
+  overflow: hidden;
+}
+.rider-frame img{
+  width: 100%;
 }
 .rider-frame-big{
   width: 100px;
@@ -550,9 +627,11 @@ nav .bars{
   width: 50%;
   padding-left: -15px;
   padding-right: -15px;
-  padding: 10px;
-  font-size: 16px;
+  padding: 15px 10px;
+  font-size: 14px;
+  font-family: "ComfortaaThin";
   text-align: center;
+  color: black;
   display: block;
   float: left;
   border-top: 1px solid #f5f5f5;
@@ -561,6 +640,9 @@ nav .bars{
 
 #go-alone{
   border-right: 1px solid #f5f5f5;
+}
+#cancel{
+  color: #e5e5e5;
 }
 
 #join-button{
@@ -589,15 +671,43 @@ nav .bars{
 
 .warning-cont{
   font-size: 18px;
-  padding: 20px;
-  background-color: white;
-  width: 80%;
   position: fixed;
   z-index: 4;
-  top: 120px;
+  top: 150px;
   left: 10%;
 }
 
 .go-alone-insist{
   margin-top: 20px;
+}
+
+/* INDIVIDUAL TRAVEL FORM */
+
+.lone-cont{
+  padding-bottom: 25px;
+}
+
+.user-dets-cont{
+  background-color: #e5e5e5;
+  padding: 10px;
+  margin-left: -25px;
+  margin-right: -25px;
+  height: auto;
+  overflow: hidden;
+}
+
+.start-button{
+  position: fixed;
+  bottom: 50px;
+  width: 80%;
+  left: 10%;
+}
+
+.bike-no{
+  float: right;
+  font-size: 20px;
+  font-family: "ComfortaaRegular";
+  margin: 0;
+  margin-top: 10px;
+  margin-right: 15px;
 }
