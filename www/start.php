@@ -47,7 +47,7 @@
           </div>
         </div>
       
-        <a id="join-button" class="gb-menu-items" href="finish.php"><i class="fa fa-home"></i>START RIDE!</a>
+        <a id="join-button" class="gb-menu-items" href="end.php"><i class="fa fa-home"></i>START RIDE!</a>
      
         </form>
         <script type="text/javascript" src="js/index.js"></script>

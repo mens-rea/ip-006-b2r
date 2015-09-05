@@ -34,9 +34,9 @@
         <title>KALESA</title>
     </head>
     <body>
-        <a class="gb-menu-items" href="destination.php"><i class="fa fa-plus"></i>RIDE</a>
-        <h4></i>STATION NEAREST YOU: AYALA MRT</h4>
-        <h4></i>5 KALESAS AVAILABLE</h4>
+        <img class="landing-brand" src="img/b2r_logo.png" />
+        <a id="join-button" class="gb-menu-items" href="destination.php"><i class="fa fa-plus"></i>RIDE</a>
+        
 
  <script type="text/javascript">
 function myFunction() {
